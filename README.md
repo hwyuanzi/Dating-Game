@@ -1,5 +1,8 @@
 # Dating Game
 
+**Ariadne 1.1:** [self-contained Python bot for both roles](submission/bot.py),
+[handoff](submission/SUBMISSION.md), and [strategy, tests and packaging notes](docs/ARIADNE.md).
+
 Code and submission instructions for the NYU Heuristic Problem Solving Dating Game. Includes the referee, a local match viewer, saved results, and Python, C++ and Julia starter folders.
 
 Architect: **Zonghao Xu** · [zx1946@nyu.edu](mailto:zx1946@nyu.edu)

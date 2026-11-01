@@ -1,9 +1,11 @@
 __pycache__/
+.DS_Store
 *.pyc
 *.exe
 bot
 strategy
 results/
+dist/
 bots.local.json
 bots/*
 !bots/templates/

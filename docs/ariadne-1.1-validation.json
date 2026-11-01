@@ -1,0 +1,682 @@
+{
+  "bot_sha256": "f21a10667fea30603ff7d79182a3434c1c761138ca2f200e8940339a8b12c80c",
+  "baseline_matchmaker_sha256": "cac3bada5d4b2d716d3764ef983b67f5b4a042a1bd47584bdd0ab3cce26e989f",
+  "unit_tests": {
+    "command": "python3 -m unittest discover -s tests",
+    "passed": 31,
+    "failed": 0
+  },
+  "process_test": {
+    "sizes": [
+      20,
+      40,
+      60,
+      100,
+      200
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "archive_sha256": "e7c747b83882af0d90277c20c96b16df412b1c8ba9b45ad058db5b3a38b52421",
+    "summary": {
+      "pairings": 30,
+      "games": 60,
+      "wins": 30,
+      "ties": 0,
+      "losses": 0,
+      "failures": [],
+      "by_opponent": {
+        "Sample A \u00b7 Local search": {
+          "pairings": 15,
+          "wins": 15,
+          "ties": 0,
+          "losses": 0
+        },
+        "Sample B \u00b7 Model learner": {
+          "pairings": 15,
+          "wins": 15,
+          "ties": 0,
+          "losses": 0
+        }
+      },
+      "max_clock_seconds": {
+        "Ariadne_P": 0.0175,
+        "Ariadne_M": 4.6042,
+        "opponent_P": 0.0108,
+        "opponent_M": 0.3191
+      },
+      "failure_count": 0
+    }
+  },
+  "matched_benchmark": {
+    "games": 60,
+    "sizes": [
+      100,
+      200
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "clock_seconds": 120,
+    "baseline_mean_score": 0.8315583333333333,
+    "final_mean_score": 0.8437016666666667,
+    "baseline_perfect_games": 15,
+    "final_perfect_games": 15,
+    "mean_paired_score_delta": 0.012143333333333336,
+    "higher_score_cases": 8,
+    "equal_score_cases": 45,
+    "lower_score_cases": 7,
+    "scope": "Development comparison, not an independent holdout or tournament win-rate estimate.",
+    "cases": [
+      {
+        "n": 100,
+        "opponent": "sample",
+        "adaptive": false,
+        "seed": 0,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 9,
+        "final_turns": 7
+      },
+      {
+        "n": 100,
+        "opponent": "sample",
+        "adaptive": false,
+        "seed": 1,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 7,
+        "final_turns": 8
+      },
+      {
+        "n": 100,
+        "opponent": "sample",
+        "adaptive": false,
+        "seed": 2,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 7,
+        "final_turns": 7
+      },
+      {
+        "n": 100,
+        "opponent": "sample",
+        "adaptive": true,
+        "seed": 0,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 9,
+        "final_turns": 7
+      },
+      {
+        "n": 100,
+        "opponent": "sample",
+        "adaptive": true,
+        "seed": 1,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 7,
+        "final_turns": 8
+      },
+      {
+        "n": 100,
+        "opponent": "sample",
+        "adaptive": true,
+        "seed": 2,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 7,
+        "final_turns": 7
+      },
+      {
+        "n": 100,
+        "opponent": "person-mixed",
+        "adaptive": false,
+        "seed": 0,
+        "baseline_score": 0.93,
+        "final_score": 0.93,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "person-mixed",
+        "adaptive": false,
+        "seed": 1,
+        "baseline_score": 0.838,
+        "final_score": 0.838,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "person-mixed",
+        "adaptive": false,
+        "seed": 2,
+        "baseline_score": 0.8875,
+        "final_score": 0.8875,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "person-mixed",
+        "adaptive": true,
+        "seed": 0,
+        "baseline_score": 0.93,
+        "final_score": 0.93,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "person-mixed",
+        "adaptive": true,
+        "seed": 1,
+        "baseline_score": 0.838,
+        "final_score": 0.838,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "person-mixed",
+        "adaptive": true,
+        "seed": 2,
+        "baseline_score": 0.8875,
+        "final_score": 0.8875,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "variable",
+        "adaptive": false,
+        "seed": 0,
+        "baseline_score": 0.85,
+        "final_score": 0.85,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "variable",
+        "adaptive": false,
+        "seed": 1,
+        "baseline_score": 0.89,
+        "final_score": 0.89,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "variable",
+        "adaptive": false,
+        "seed": 2,
+        "baseline_score": 0.9,
+        "final_score": 0.9,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "variable",
+        "adaptive": true,
+        "seed": 0,
+        "baseline_score": 0.7111,
+        "final_score": 0.7111,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "variable",
+        "adaptive": true,
+        "seed": 1,
+        "baseline_score": 0.89,
+        "final_score": 0.89,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "variable",
+        "adaptive": true,
+        "seed": 2,
+        "baseline_score": 0.83,
+        "final_score": 0.83,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "mutable",
+        "adaptive": false,
+        "seed": 0,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 18,
+        "final_turns": 18
+      },
+      {
+        "n": 100,
+        "opponent": "mutable",
+        "adaptive": false,
+        "seed": 1,
+        "baseline_score": 0.92,
+        "final_score": 0.92,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "mutable",
+        "adaptive": false,
+        "seed": 2,
+        "baseline_score": 0.84,
+        "final_score": 0.84,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "mutable",
+        "adaptive": true,
+        "seed": 0,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 18,
+        "final_turns": 18
+      },
+      {
+        "n": 100,
+        "opponent": "mutable",
+        "adaptive": true,
+        "seed": 1,
+        "baseline_score": 0.91,
+        "final_score": 0.91,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "mutable",
+        "adaptive": true,
+        "seed": 2,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 17,
+        "final_turns": 17
+      },
+      {
+        "n": 100,
+        "opponent": "coarse",
+        "adaptive": false,
+        "seed": 0,
+        "baseline_score": 0.96,
+        "final_score": 0.96,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "coarse",
+        "adaptive": false,
+        "seed": 1,
+        "baseline_score": 0.92,
+        "final_score": 0.86,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "coarse",
+        "adaptive": false,
+        "seed": 2,
+        "baseline_score": 0.7,
+        "final_score": 0.9,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "coarse",
+        "adaptive": true,
+        "seed": 0,
+        "baseline_score": 0.9398,
+        "final_score": 0.98,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "coarse",
+        "adaptive": true,
+        "seed": 1,
+        "baseline_score": 0.92,
+        "final_score": 0.92,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 100,
+        "opponent": "coarse",
+        "adaptive": true,
+        "seed": 2,
+        "baseline_score": 0.67,
+        "final_score": 0.5792,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "sample",
+        "adaptive": false,
+        "seed": 0,
+        "baseline_score": 0.7,
+        "final_score": 0.82,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "sample",
+        "adaptive": false,
+        "seed": 1,
+        "baseline_score": 0.78,
+        "final_score": 0.74,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "sample",
+        "adaptive": false,
+        "seed": 2,
+        "baseline_score": 0.6,
+        "final_score": 0.76,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "sample",
+        "adaptive": true,
+        "seed": 0,
+        "baseline_score": 0.7,
+        "final_score": 0.82,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "sample",
+        "adaptive": true,
+        "seed": 1,
+        "baseline_score": 0.78,
+        "final_score": 0.74,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "sample",
+        "adaptive": true,
+        "seed": 2,
+        "baseline_score": 0.6,
+        "final_score": 0.76,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "person-mixed",
+        "adaptive": false,
+        "seed": 0,
+        "baseline_score": 0.63,
+        "final_score": 0.63,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "person-mixed",
+        "adaptive": false,
+        "seed": 1,
+        "baseline_score": 0.65,
+        "final_score": 0.65,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "person-mixed",
+        "adaptive": false,
+        "seed": 2,
+        "baseline_score": 0.67,
+        "final_score": 0.67,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "person-mixed",
+        "adaptive": true,
+        "seed": 0,
+        "baseline_score": 0.63,
+        "final_score": 0.63,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "person-mixed",
+        "adaptive": true,
+        "seed": 1,
+        "baseline_score": 0.65,
+        "final_score": 0.65,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "person-mixed",
+        "adaptive": true,
+        "seed": 2,
+        "baseline_score": 0.67,
+        "final_score": 0.67,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "variable",
+        "adaptive": false,
+        "seed": 0,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "variable",
+        "adaptive": false,
+        "seed": 1,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "variable",
+        "adaptive": false,
+        "seed": 2,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 19,
+        "final_turns": 18
+      },
+      {
+        "n": 200,
+        "opponent": "variable",
+        "adaptive": true,
+        "seed": 0,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "variable",
+        "adaptive": true,
+        "seed": 1,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "variable",
+        "adaptive": true,
+        "seed": 2,
+        "baseline_score": 1.0,
+        "final_score": 1.0,
+        "baseline_turns": 19,
+        "final_turns": 18
+      },
+      {
+        "n": 200,
+        "opponent": "mutable",
+        "adaptive": false,
+        "seed": 0,
+        "baseline_score": 0.8308,
+        "final_score": 0.8308,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "mutable",
+        "adaptive": false,
+        "seed": 1,
+        "baseline_score": 0.75,
+        "final_score": 0.75,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "mutable",
+        "adaptive": false,
+        "seed": 2,
+        "baseline_score": 0.92,
+        "final_score": 0.92,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "mutable",
+        "adaptive": true,
+        "seed": 0,
+        "baseline_score": 0.9,
+        "final_score": 0.9,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "mutable",
+        "adaptive": true,
+        "seed": 1,
+        "baseline_score": 0.71,
+        "final_score": 0.71,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "mutable",
+        "adaptive": true,
+        "seed": 2,
+        "baseline_score": 0.72,
+        "final_score": 0.72,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "coarse",
+        "adaptive": false,
+        "seed": 0,
+        "baseline_score": 0.6,
+        "final_score": 0.72,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "coarse",
+        "adaptive": false,
+        "seed": 1,
+        "baseline_score": 0.82,
+        "final_score": 0.74,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "coarse",
+        "adaptive": false,
+        "seed": 2,
+        "baseline_score": 0.5604,
+        "final_score": 0.56,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "coarse",
+        "adaptive": true,
+        "seed": 0,
+        "baseline_score": 0.6,
+        "final_score": 0.72,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "coarse",
+        "adaptive": true,
+        "seed": 1,
+        "baseline_score": 0.7,
+        "final_score": 0.7,
+        "baseline_turns": 20,
+        "final_turns": 20
+      },
+      {
+        "n": 200,
+        "opponent": "coarse",
+        "adaptive": true,
+        "seed": 2,
+        "baseline_score": 0.5604,
+        "final_score": 0.56,
+        "baseline_turns": 20,
+        "final_turns": 20
+      }
+    ]
+  },
+  "low_clock": {
+    "clock_seconds": 1,
+    "games": 8,
+    "max_m_seconds": 0.31440637599916954
+  }
+}
